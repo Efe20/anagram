@@ -1,3 +1,8 @@
+/**
+  * This class is the main class of the anagram application. 
+  * It allows checking whether two given texts are anagrams of each other based on the given command line arguments.
+  * The application expects exactly two text arguments and returns the result of the anagram check.
+**/
 package de.beyonnex;
 
 import de.beyonnex.errorhandling.CountOfArgsNotAllowedException;
