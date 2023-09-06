@@ -1,3 +1,7 @@
+/**
+  * This class is responsible for creating a map containing the number of 
+  * occurrences of capital letters in a given sentence.
+  */
 package de.beyonnex.services;
 
 import java.util.Map;
