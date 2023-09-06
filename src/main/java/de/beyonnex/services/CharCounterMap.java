@@ -1,3 +1,7 @@
+/**
+  * This class is a helper class used to count the number of occurrences of characters 
+  * in a character array and return a map of characters to their frequencies.
+**/
 package de.beyonnex.services;
 
 import java.util.HashMap;
