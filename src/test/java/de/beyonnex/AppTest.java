@@ -4,7 +4,7 @@ import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
 
-public class AppTest {
+public class AppAnagramTest {
 
     /**
      * Min number of args exception msg.
