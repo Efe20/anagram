@@ -4,7 +4,7 @@ import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
 
-public class AppTest {
+public class AppAnagramTest {
 
     /**
      * Min number of args exception msg.
@@ -41,7 +41,7 @@ public class AppTest {
      * Not throws exception with 2 args
      */
     @Test
-    public final void hasRightCountOfArgs2() {
+    public final void exceptionIsNotThrownOnTwoArgs() {
         final Throwable thrown = Assertions.catchThrowable(
                 () -> new AppAnagram("test", "hello").exec()
         );
@@ -52,7 +52,7 @@ public class AppTest {
      * Throws exception with 3 args..
      */
     @Test
-    public final void hasRightCountOfArgs3() {
+    public final void exceptionIsThrownOnThreeArgs() {
         final Throwable thrown = Assertions.catchThrowable(
                 () -> new AppAnagram("test", "hello", "world").exec()
         );
