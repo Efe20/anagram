@@ -9,9 +9,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
-/**
- * Anagram App.
- */
+
 public final class AppAnagram {
 
     private final transient Iterable<String> arguments;
@@ -34,7 +32,7 @@ public final class AppAnagram {
 
     /**
      * Run app
-     * @throws IOException If args are less than 2
+     * @throws IOException If args are less or greater than 2
      */
     @SuppressWarnings("PMD.SystemPrintln")
     public void exec() throws IOException {
