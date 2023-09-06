@@ -1,5 +1,9 @@
+/**
+  * This class implements the `AnagramChecker` interface and check if two texts are anagrams of each other. 
+  * An anagram is a word or sentence formed by rearranging the letters of another word or sentence, where
+  * all letters are preserved. 
+*/
 package de.beyonnex.services;
-
 
 public final class AnagramCheckerService implements AnagramChecker {
 
