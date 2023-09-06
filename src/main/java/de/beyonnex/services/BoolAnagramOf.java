@@ -1,3 +1,7 @@
+/**
+  * This lass represents a helper class used to check if two strings
+  * (in the form of maps of characters and their frequencies) are anagrams of each other.
+  */
 package de.beyonnex.services;
 
 import java.util.Map;
