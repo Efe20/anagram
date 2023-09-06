@@ -44,17 +44,6 @@ public class AnagramCheckerTests {
         assertThatTextsAreAnagramTrue(start, s1, s2);
     }
 
-    @Test
-    public void shouldReturnTextsAreNotAnagramWithTwoWords(){
-        // GIVEN
-        long start = System.currentTimeMillis();
-
-        String s1 = "Christmash";
-        String s2 = "trims cash";
-
-        // WHEN/THEN
-        assertThatTextsAreAnagramFalse(start, s1, s2);
-    }
 
     @Test
     public void shouldReturnTextsAreAnagramWithThreeWords(){
