@@ -7,12 +7,13 @@ import java.util.Map;
 
 public class SentenceCharCounterTest {
 
-    /**
-     * Returns char map with correct count uppercase.
-     */
+
     @Test
     public final void shouldReturnCharUppercaseMapWithCorrectCount() {
+        // GIVEN/WHEN
         final Map map = new SentenceCharCounter("TEstteSt").uppercaseMap();
+
+        // WHEN
         Assertions.assertThat(map.get('T')).isEqualTo(4);
         Assertions.assertThat(map.get('E')).isEqualTo(2);
         Assertions.assertThat(map.get('S')).isEqualTo(2);

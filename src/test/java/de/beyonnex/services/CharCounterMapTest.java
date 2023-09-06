@@ -7,9 +7,7 @@ import java.util.Map;
 
 public class CharCounterMapTest {
 
-    /**
-     * Returns char map with correct count uppercase.
-     */
+
     @Test
     public final void shouldReturnCharUppercaseMapWithCorrectCount() {
         // GIVEN/WHEN

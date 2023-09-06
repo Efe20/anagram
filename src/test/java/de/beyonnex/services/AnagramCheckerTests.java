@@ -1,11 +1,13 @@
 package de.beyonnex.services;
 
-import org.junit.Assert;
+import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
 public class AnagramCheckerTests {
 
-    private void printResult(String s1, String s2, boolean result){
+    private void printResult(String s1, String s2, boolean result, long timeElapsed){
+        System.out.println("Needed time = " + timeElapsed + " milli seconds!");
+
         System.out.println("\"" + s1 + "\"" + " and " + "\"" + s2 + "\"" +  " are anagrams = " + result);
         System.out.println("\n");
     }
@@ -14,22 +16,20 @@ public class AnagramCheckerTests {
         AnagramCheckerService anagramCheckerService = new AnagramCheckerService(s1, s2);
         boolean result = anagramCheckerService.textsAreAnagram();
         long finish = System.currentTimeMillis();
-        Assert.assertTrue(result);
+        Assertions.assertThat(result).isTrue();
 
         long timeElapsed = finish - start;
-        System.out.println("Needed time = " + timeElapsed + " milli seconds!");
-        printResult(s1, s2, result);
+        printResult(s1, s2, result, timeElapsed);
     }
 
     private void assertThatTextsAreAnagramFalse(long start, String s1, String s2) {
         AnagramCheckerService anagramCheckerService = new AnagramCheckerService(s1, s2);
         boolean result = anagramCheckerService.textsAreAnagram();
         long finish = System.currentTimeMillis();
-        Assert.assertFalse(result);
+        Assertions.assertThat(result).isFalse();
 
         long timeElapsed = finish - start;
-        System.out.println("Needed time = " + timeElapsed + " milli seconds!");
-        printResult(s1, s2, result);
+        printResult(s1, s2, result, timeElapsed);
     }
 
     @Test
