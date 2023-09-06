@@ -7,8 +7,7 @@ Here you can find some  ![example](https://www.yourdictionary.com/articles/examp
 
 ## Usage
 
-To check if two texts are anagrams, simply run the test class AnagramCheckerServiceTests. There you can find
-different examples for anagrams.
+To check if two texts are anagrams, simply run the jar file.
 
 ```bash
 java -jar anagram.jar "silent" "listen"
